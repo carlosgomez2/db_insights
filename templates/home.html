@@ -1,13 +1,22 @@
 {% extends 'base.html' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Landing{% endblock %}
 
 {% block content %}
-{% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">Log Out</a></p>
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">Log In</a>
-{% endif %}
+  <section>
+    <h1>Database insigths</h1>
+    <p class="lead">
+      Consulta datos generales de compañias mediante la API pública
+    </p>
+  </section>
+
+  <section>
+    <h2>Agrega nuevas compañias</h2>
+    <p class="lead">
+      Crea multiples compañias que después puedes consultar para tus landing pages
+    </p>
+    <a href="{% url 'login' %}" class="btn btn-lg btn-primary">
+      Unirse
+    </a>
+  </section>
 {% endblock %}

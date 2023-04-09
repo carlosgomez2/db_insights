@@ -1,0 +1,17 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">DB Insights</a>
+    <div class="d-flex">
+      {% if user.is_authenticated %}
+        <p class="mx-3">Hi {{ user.username }}!</p>
+        <a href="{% url 'logout' %}" class="btn btn-outline btn-primary mx-3">
+          Log out
+        </a>
+      {% else %}
+        <a href="{% url 'login' %}" class="btn btn-outline btn-primary mx-3">
+          Log in
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
