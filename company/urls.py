@@ -15,4 +15,8 @@ urlpatterns = [
         'company/create',
         views.CompanyFormView.as_view(),
         name="company_create_view"),
+    path(
+        'company/<int:pk>/update',
+        views.CompanyUpdateView.as_view(),
+        name="company_update_view"),
 ]

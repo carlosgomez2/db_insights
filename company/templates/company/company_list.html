@@ -30,6 +30,9 @@
                 <a href="{% url 'company_detail_view' pk=company.pk %}" class="btn btn-sm btn-primary">
                   Ver
                 </a>
+                <a href="{% url 'company_update_view' pk=company.pk %}" class="btn btn-sm btn-secondary">
+                  Editar
+                </a>
               </td>
             </tr>
           {% endfor %}

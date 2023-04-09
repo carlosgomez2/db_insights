@@ -3,7 +3,7 @@ from company import models
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 
 
 class CompanyListView(LoginRequiredMixin, ListView):
@@ -21,6 +21,12 @@ class CompanyDetailView(LoginRequiredMixin, DetailView):
 
 
 class CompanyFormView(LoginRequiredMixin, CreateView):
+
+    model = models.Company
+    fields = "__all__"
+
+
+class CompanyUpdateView(LoginRequiredMixin, UpdateView):
 
     model = models.Company
     fields = "__all__"
