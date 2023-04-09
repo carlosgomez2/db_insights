@@ -1,0 +1,222 @@
+[
+  {
+    "model": "company.company",
+    "pk": 1,
+    "fields": {
+      "name": "Apple",
+      "domain": "apple.com",
+      "industry": "Technology",
+      "created_at": "2023-04-09T19:58:24.735Z",
+      "updated_at": "2023-04-09T19:58:24.765Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 2,
+    "fields": {
+      "name": "IMB",
+      "domain": "ibm.com",
+      "industry": "Technology",
+      "created_at": "2023-04-09T19:58:24.735Z",
+      "updated_at": "2023-04-09T19:58:24.765Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 3,
+    "fields": {
+      "name": "Lenovo",
+      "domain": "Lenovo.com",
+      "industry": "Technology",
+      "created_at": "2023-04-09T19:58:24.735Z",
+      "updated_at": "2023-04-09T19:58:24.765Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 4,
+    "fields": {
+      "name": "Microsoft",
+      "domain": "microsoft.com",
+      "industry": "Technology",
+      "created_at": "2023-04-09T20:02:05.032Z",
+      "updated_at": "2023-04-09T20:02:05.032Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 5,
+    "fields": {
+      "name": "Hewlett-Packard",
+      "domain": "hp.com",
+      "industry": "Technology Information",
+      "created_at": "2023-04-09T20:03:22.734Z",
+      "updated_at": "2023-04-09T20:03:22.734Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 6,
+    "fields": {
+      "name": "Amazon",
+      "domain": "amazon.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:04:32.409Z",
+      "updated_at": "2023-04-09T20:04:32.409Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 7,
+    "fields": {
+      "name": "Intel corporation",
+      "domain": "intel.com",
+      "industry": "Technology development",
+      "created_at": "2023-04-09T20:05:08.925Z",
+      "updated_at": "2023-04-09T20:05:08.925Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 8,
+    "fields": {
+      "name": "Google",
+      "domain": "google.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:05:32.208Z",
+      "updated_at": "2023-04-09T20:05:32.208Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 9,
+    "fields": {
+      "name": "Meta",
+      "domain": "meta.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:06:01.133Z",
+      "updated_at": "2023-04-09T20:06:01.133Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 10,
+    "fields": {
+      "name": "BMW Group",
+      "domain": "btw.com",
+      "industry": "Automotors",
+      "created_at": "2023-04-09T20:06:35.049Z",
+      "updated_at": "2023-04-09T20:06:35.049Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 11,
+    "fields": {
+      "name": "Rappi",
+      "domain": "rappi.com",
+      "industry": "Delivery",
+      "created_at": "2023-04-09T20:07:05.073Z",
+      "updated_at": "2023-04-09T20:07:05.073Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 12,
+    "fields": {
+      "name": "Uber",
+      "domain": "Uber.com",
+      "industry": "Delivery",
+      "created_at": "2023-04-09T20:07:16.821Z",
+      "updated_at": "2023-04-09T20:07:16.821Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 13,
+    "fields": {
+      "name": "AliExpress",
+      "domain": "aliexpress.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:07:39.681Z",
+      "updated_at": "2023-04-09T20:07:39.681Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 14,
+    "fields": {
+      "name": "PayPal",
+      "domain": "paypal.com",
+      "industry": "Internet payment",
+      "created_at": "2023-04-09T20:08:27.408Z",
+      "updated_at": "2023-04-09T20:08:27.408Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 15,
+    "fields": {
+      "name": "Mercado Libre",
+      "domain": "mercadolibre.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:09:02.884Z",
+      "updated_at": "2023-04-09T20:09:02.884Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 16,
+    "fields": {
+      "name": "Kavak",
+      "domain": "kavak.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:09:21.000Z",
+      "updated_at": "2023-04-09T20:09:21.000Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 17,
+    "fields": {
+      "name": "Ricoh",
+      "domain": "Ricoh.com",
+      "industry": "Technology support",
+      "created_at": "2023-04-09T20:09:56.181Z",
+      "updated_at": "2023-04-09T20:09:56.181Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 18,
+    "fields": {
+      "name": "Netflix",
+      "domain": "Netflix.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:10:22.284Z",
+      "updated_at": "2023-04-09T20:10:22.284Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 19,
+    "fields": {
+      "name": "Red Hat",
+      "domain": "redhat.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:10:43.615Z",
+      "updated_at": "2023-04-09T20:10:43.615Z"
+    }
+  },
+  {
+    "model": "company.company",
+    "pk": 20,
+    "fields": {
+      "name": "Cannonical",
+      "domain": "cannonical.com",
+      "industry": "Internet",
+      "created_at": "2023-04-09T20:11:00.286Z",
+      "updated_at": "2023-04-09T20:11:00.286Z"
+    }
+  }
+]
