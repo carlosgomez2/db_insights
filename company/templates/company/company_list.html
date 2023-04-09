@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Lista de compañias</title>{% endblock %}
+
+{% block content %}
+  <div class="d-flex align-items-center justify-content-between">
+    <h2>Compañias</h2>
+    <a href="{% url 'company_create_view' %}" class="btn btn-success btn-sm">Crear compañia</a>
+  </div>
+
+    {% if company_list %}
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Dominio</th>
+            <th scope="col">Industria</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for company in company_list %}
+            <tr>
+              <th scope="row">{{ company.pk }}</th>
+              <td>{{ company.name }}</td>
+              <td>{{ company.domain }}</td>
+              <td>{{ company.industry }}</td>
+              <td>
+                <a href="{% url 'company_detail_view' pk=company.pk %}" class="btn btn-sm btn-primary">
+                  Ver
+                </a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <h5>No hay compañias aún</h5>
+    {% endif %}
+{% endblock %}
