@@ -8,7 +8,7 @@
     <a href="{% url 'company_create_view' %}" class="btn btn-success btn-sm">Crear compañia</a>
   </div>
 
-    {% if company_list %}
+    {% if companies %}
       <table class="table">
         <thead>
           <tr>
@@ -20,7 +20,7 @@
           </tr>
         </thead>
         <tbody>
-          {% for company in company_list %}
+          {% for company in companies %}
             <tr>
               <th scope="row">{{ company.pk }}</th>
               <td>{{ company.name }}</td>
@@ -41,4 +41,23 @@
     {% else %}
       <h5>No hay compañias aún</h5>
     {% endif %}
+
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1" class="btn btn-sm btn-secondary">&laquo; primera</a>
+                <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-sm btn-secondary">anterior</a>
+            {% endif %}
+
+            <span class="text-muted">
+                Pág {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}" class="btn btn-sm btn-secondary">siguiente</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}" class="btn btn-sm btn-secondary">última &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
 {% endblock %}
