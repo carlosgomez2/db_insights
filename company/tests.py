@@ -20,7 +20,7 @@ class CompanyTestCase(TestCase):
             domain="apple.com",
             industry="Technology")
 
-    def test_animals_can_speak(self):
+    def test_company_attributes(self):
         apple = Company.objects.get(name="Apple")
         self.assertEqual(apple.name, 'Apple')
         self.assertEqual(apple.domain, 'apple.com')
