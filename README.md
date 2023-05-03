@@ -8,12 +8,12 @@ This information would be used to build frontends being served from an endpoint 
 
 - Install dependencies
 ```shell
-git clone git@github.com:carlosgomez2/db_insights.git
-cd db_insights
-pip3 install -r requirements.txt
+$ git clone git@github.com:carlosgomez2/db_insights.git
+$ cd db_insights
+$ pip3 install -r requirements.txt
 ```
 
-- Create your env with venv or conda
+- Create your env with venv or conda and activate with `. ./venv/bin/activate`
 
 - Duplicate `.env-sample` and configure your credentials, then rename to `.env`
 
@@ -21,7 +21,17 @@ pip3 install -r requirements.txt
 
 - Run migrations `./manage.py migrate`
 
-- Run the server `./manage.py runserver 0.0.0.0:8000`
+- Create a superuser `./manage.py createsuperuser`
+
+- Load fixtures for companies `./manage.py loaddata companies.json`
+
+- Run the django server server `./manage.py runserver 0.0.0.0:8000`
+
+- Run django server + esbuild from **Procfile** with Overmind `overmind start`
+
+### Javascript
+
+I am working with stimulus library
 
 ### Test
 

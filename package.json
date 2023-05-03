@@ -1,0 +1,17 @@
+{
+  "name": "db_insight",
+  "version": "1.0.0",
+  "description": "Company database scrapper",
+  "main": "index.js",
+  "repository": "git@github.com:carlosgomez2/db_insights.git",
+  "author": "Carlos Gómez <carlosgomez2@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "0.17.18",
+    "stimulus": "3.2.1",
+    "toastify-js": "^1.12.0"
+  },
+  "scripts": {
+    "build": "esbuild static/javascript/controllers/*.* --bundle --minify --sourcemap --outdir=static/javascript/builds --public-path=assets"
+  }
+}

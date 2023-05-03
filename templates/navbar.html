@@ -1,9 +1,18 @@
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand">DB Insights</a>
+    <a href="{% url 'dashboard' %}" class="navbar-brand">DB Insights</a>
+
+    {% if user.is_authenticated %}
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'company_list_view' %}">Companies</a>
+        </li>
+      </ul>
+    {% endif %}
+
     <div class="d-flex">
       {% if user.is_authenticated %}
-        <p class="mx-3">Hi {{ user.username }}!</p>
+        <p class="mx-3 my-auto">Hi {{ user.username|capfirst }}!</p>
         <a href="{% url 'logout' %}" class="btn btn-outline btn-primary mx-3">
           Log out
         </a>

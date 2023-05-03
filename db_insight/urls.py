@@ -22,7 +22,9 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('dashboard', TemplateView.as_view(template_name='dashboard.html'), name='dashboard'),
 
     # Company
     path('', include('company.urls')),
+    path('', include('scrapper.urls')),
 ]

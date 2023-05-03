@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <section data-controller="dashboard">
+    <h1>Dashboard</h1>
+    <p class="lead">Hi {{ user.username|capfirst }}!</p>
+    <p class="text-muted">From here you can enqueue a web scraping to get companies info</p>
+
+    <hr>
+
+    <h2>Scrapping for companies</h2>
+
+    <button class="btn btn-lg btn-primary" type="button" data-action="click->dashboard#scrap">
+      Scrap!
+    </button>
+  </section>
+{% endblock %}
