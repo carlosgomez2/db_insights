@@ -25,7 +25,13 @@ $ pip3 install -r requirements.txt
 
 - Load fixtures for companies `./manage.py loaddata companies.json`
 
-- Run the server `./manage.py runserver 0.0.0.0:8000`
+- Run the django server server `./manage.py runserver 0.0.0.0:8000`
+
+- Run django server + esbuild from **Procfile** with Overmind `overmind start`
+
+### Javascript
+
+I am working with stimulus library
 
 ### Test
 
