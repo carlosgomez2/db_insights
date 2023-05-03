@@ -1,9 +1,14 @@
-import { Controller } from 'stimulus';
+import ApplicationController from './application_controller';
 
-export default class extends Controller {
+export default class extends ApplicationController {
   static targets = [];
 
-  connect() {
-    console.log("Hello from dashboard controller");
+  scrap() {
+    fetch('/scrape', { method: 'GET' })
+      .then(response => response.json())
+      .then(data => {
+        const { message, _code } = JSON.parse(data);
+        this.constructor.toast(message);
+      });
   }
 }

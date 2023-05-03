@@ -26,4 +26,5 @@ urlpatterns = [
 
     # Company
     path('', include('company.urls')),
+    path('', include('scrapper.urls')),
 ]
